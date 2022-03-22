@@ -1,0 +1,103 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.login-page{
+    background-color: rgb(220, 220, 220,0.5);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-box{
+    background-color: white;
+    padding: 1.5rem 6rem;
+ 
+    font-size: 1.2rem;
+    border-radius: 10px;
+    box-shadow: 1px 2px 2px 1px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-h{
+    font-size: 2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 1rem;
+}
+
+.log-btn{
+    width:80%;
+    background-color: rgb(66, 133, 244,0.7);
+
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    color: white;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: 0.2s;
+    margin: 0.5rem 0rem;
+}
+
+.log-btn-g{
+
+    transition: 0.2s;
+    width:80%;
+    background-color: rgb(0, 0, 0,0.7);
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    color: white;
+    font-weight: 700;
+    border-radius: 5px;
+    margin: 0.5rem 0rem;
+
+}
+
+.lg-logo{
+    font-size: 1.2rem;
+    margin-bottom: -3px;
+    margin-right: 5px;
+}
+.log-btn:hover, .log-btn-g:hover{
+    cursor: pointer;
+}
+
+.chats-h{
+    text-align: center;
+    margin: 1rem;
+    font-size: 2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.lo-btn{
+    position: absolute;
+    font-size: 1.15rem;
+    border: none;
+    background-color: transparent;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    right: 10px;
+    top:10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 0.3s;
+}
+
+.lo-btn:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+.log-btn:hover{
+    background-color: rgb(66, 133, 244);
+}
+
+.log-btn-g:hover{
+    background-color: rgb(0, 0, 0);
+}

@@ -4,12 +4,14 @@ import React, { useEffect } from "react";
 import firebase from "firebase/app";
 import { auth } from "../firebase";
 import { ImGoogle, ImGithub } from 'react-icons/im';
+import logo from '../components/logo.png';
 export default function Login() {
 
   return (
     <div className="login-page">
+    <img src={logo} className='login-logo'/>
       <div className="login-box">
-        <div className="login-h">Welcome to Chat App!</div>
+        <div className="login-h">Welcome to Chatify!</div>
         <div>
           <button
             className="log-btn"

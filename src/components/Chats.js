@@ -21,6 +21,7 @@ export default function Chats() {
   const handleLogout = async () => {
     await auth.signOut();
     history.push("/");
+    window.location.reload();
   };
   useEffect(() => {
     if (!user) {
@@ -30,7 +31,7 @@ export default function Chats() {
     axios
       .get("https://api.chatengine.io/users/me", {
         headers: {
-          "project-id": "60bbe1fc-4aee-4193-82c6-81254679c825",
+          "project-id": process.env.CHAT_APP_ID,
           "user-name": user.email,
           "user-secret": user.uid,
         },
@@ -49,7 +50,7 @@ export default function Chats() {
           axios
             .post("https://api.chatengine.io/users", formdata, {
               headers: {
-                "private-key": "f9c5555b-f7ac-44f5-89f3-f09c7c49bcd2",
+                "private-key": process.env.CHAT_APP_KEY,
               },
             })
             .then(() => {
@@ -71,7 +72,7 @@ export default function Chats() {
         <button className="lo-btn" onClick={handleLogout}>Logout <FiLogOut/></button>
         <div className="c-engine">
         <ChatEngine
-          projectID={"60bbe1fc-4aee-4193-82c6-81254679c825"}
+          projectID={process.env.CHAT_APP_ID}
           userName={user.email}
           userSecret={user.uid}
           height="88vh"

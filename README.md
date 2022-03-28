@@ -12,4 +12,7 @@ The chat engine was built using: [Chat-Engine](https://chatengine.io/)
 ![2](https://user-images.githubusercontent.com/65510306/160337319-c2836eb3-1d26-490e-b43b-7985fd1a2433.png)
 
 
+You can create groups, add other individuals who have signed up, to your group, engage in real-time conversations on the groups, change group names and remove/add participants to groups.
+
+
 The website has been deployed here: https://chat.suryaanshrathinam.com/
